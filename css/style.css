@@ -1,0 +1,119 @@
+body {
+	/* feel free to change height */
+	/*height: 5000px;*/
+	font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+
+	overflow-y: scroll;
+}
+#map-svg {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	transition: all 1s;
+}
+.is-hidden {
+	display: none;
+}
+
+#scrolldown {
+	transition: all 1s; 
+}
+
+#logo {
+	transition: 1s;
+}
+
+#hand {
+	transition: 1s;
+}
+
+#see-more {
+	transition: 1s;
+}
+
+#left-slide {
+	transition: 1s;
+}
+
+#right-slide {
+	transition: 1s;
+}
+
+#bg_small {
+	transition: 1s;
+}
+
+#facebook {
+	transition: 1s cubic-bezier(.87,-.41,.19,1.44);
+	cursor: pointer;
+}
+
+#instagram {
+	transition: 1s cubic-bezier(.87,-.41,.19,1.44);
+	cursor: pointer;
+}
+
+#tripbutton {
+	cursor:pointer;
+}
+
+#mce-EMAIL {
+	height: 65px!important;
+    padding: 0 35px!important;
+    font-size: 20px!important;
+    float: left!important;
+    border: none!important;
+    font-weight: bold!important;
+    width: 330px;
+    -moz-border-radius-topleft: 35px!important;
+	-moz-border-radius-bottomleft: 35px!important;
+	-webkit-border-top-left-radius: 35px!important;
+	-webkit-border-bottom-left-radius: 35px!important;
+	margin: 0px!important;
+}
+
+#mc-embedded-subscribe {
+	clear: none!important;	
+	float: left!important;
+    height: 65px!important;
+    padding: 0 35px!important;
+    background: #FF629F!important;
+    border: none!important;
+    color: white!important;
+    font-size: 20px!important;
+	-moz-border-radius-topright: 35px!important;
+	-moz-border-radius-bottomright: 35px!important;
+	-moz-border-radius-topleft: 0px!important;
+	-moz-border-radius-bottomleft: 0px!important;
+	-webkit-border-top-right-radius: 35px!important;
+	-webkit-border-bottom-right-radius: 35px!important;
+	-webkit-border-bottom-top-left: 0px!important;
+	-webkit-border-bottom-bottom-left: 0px!important;
+	width: 130px;
+	border-top-left-radius: 0px!important;
+	border-bottom-left-radius: 0px!important;
+}
+
+footer#footer {
+	font-weight: bold;
+	position: fixed;
+	left: 0px;
+	bottom: 0px;
+	background: white;
+	width: 100%;
+	text-align: center;
+	padding: 14px 0;
+}
+
+a.tnc, a.tnc:hover {
+	text-decoration: none;
+	color: #FF629F;
+}
+
+@media(max-width:600px) {
+	#mce-EMAIL {
+	    font-size: 14px!important;
+	    width: 230px!important;
+	}   
+} 

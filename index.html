@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Cache-control" content="public">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Kaja</title>
+
+    <!-- Load Stylesheets Files -->
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/jquery-ui.css">
+
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+<body>
+	<div>
+		<svg id="map-svg" width="1280px" height="1024px" viewBox="0 0 1280 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+			<title>Kaja</title>
+			<desc>Introduction</desc>
+
+			
+
+			<g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" onclick="clicked(evt)">
+				<image id="bg_small" x="0" y="30" width="1280" height="1024" style="background:white; opacity:0.5" xlink:href="./img/map.png" ></image>
+
+				<image id="scrolldown" x="469" y="0" width="350" height="773" xlink:href="./img/scroll.png"></image>
+
+				<image id="logo-container" x="535" y="60" width="210" height="210" xlink:href="./img/logo_container.png" display="none"></image>
+
+				<image id="logo" x="520" y="200" width="240" height="190" xlink:href="./img/kajalogoweb.png" ></image>
+
+				<text id="tripclick" y="350" fill="#434343" style="font-size: 55px;" text-anchor="middle" display="none">
+					<tspan x="650">Create a trip</tspan>
+					<tspan x="645" dy="55">in a <tspan style="stroke: #434343;stroke-width: 2px">single</tspan> click!</tspan>
+				</text>
+
+				<image id="tripbutton" x="520" y="450" width="240" height="60" xlink:href="./img/button_idle.png" display="none"></image>
+
+				<image id="hand" x="512.5" y="1024" width="255" height="610" xlink:href="./img/hand_noclick.png"></image>
+
+				<image id="see-more" x="512.5" y="1024" width="255" height="80" xlink:href="./img/see_more.png" display="none"></image>
+
+
+
+
+				<text id="tripend" y="350" fill="#434343" style="font-size: 45px;" text-anchor="middle" display="none">
+					<tspan x="650">Explore <tspan style="stroke: #434343;stroke-width: 2px">Singapore</tspan> Today</tspan>
+					<tspan x="645" dy="55"></tspan>
+				</text>
+
+				<text id="joinus" y="400" fill="#434343" style="font-size: 25px;" text-anchor="middle" display="none">
+					<tspan x="650">Express your interest</tspan>
+					<tspan x="645" dy="30"><tspan style="stroke: #434343;stroke-width: 2px">Join us now!</tspan></tspan>
+				</text>
+
+				<image id="mid-slide" x="0" y="810" width="1280" height="180" xlink:href="./img/p4_bg.png" display="none"></image>
+
+				<image id="left-slide" x="-492" y="480" width="492" height="512" xlink:href="./img/left_slide.png" display="none"></image>
+
+				<image id="right-slide" x="1280" y="634" width="452" height="356" xlink:href="./img/right_slide.png" display="none"></image>
+
+
+				<foreignObject x="400" y="470" width="500" height="150" id="subscribe-form" display="none">
+					<body xmlns="http://www.w3.org/1999/xhtml">
+						<style type="text/css">
+
+							#mc_embed_signup{clear:left; font:14px Helvetica,Arial,sans-serif; }
+
+						</style>
+
+						<div id="mc_embed_signup">
+
+							<form action="//today.us14.list-manage.com/subscribe/post?u=192c588c23968616d8fa56f99&amp;id=d2abc948ba" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+
+								<div id="mc_embed_signup_scroll">
+
+									<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="Enter your email address" required>
+
+									<input type="hidden" name="b_192c588c23968616d8fa56f99_d2abc948ba" tabindex="-1" value="">
+
+									<div class=""><input type="submit" value="Join" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+
+								</div>
+
+							</form>
+
+						</div>
+					</body>
+				</foreignObject>
+
+				<image id="facebook" x="580" y="1024" width="50" height="50" xlink:href="./img/logo_fb.png" display="none" ></image>
+
+				<image id="instagram" x="650" y="1024" width="50" height="50" xlink:href="./img/logo_instagram.png" display="none" ></image>
+
+			</g>
+
+			
+
+			<g>
+				<path id="trail-path" display="none" fill="none" stroke="#FF629F" stroke-width="12" stroke-miterlimit="10" d="
+				M440,635 
+				L70,450
+				L398,282
+				L648,405
+				L815,328
+				L980,410
+				L1114,346
+				L1195,383
+				L863,550
+				L989,614
+				L863,681
+				L938,720
+				L820,783
+				L648,700
+				L572,742
+				L737,826"/>
+			</g>
+
+			<image x="167" y="570" width="380" height="110" xlink:href="./img/1_zoo.png" id="loc-1" class="is-hidden"/>
+
+			<image x="300" y="260" width="385" height="139" xlink:href="./img/2_marina.png" id="loc-2" class="is-hidden"/>
+
+			<image x="775" y="245" width="369" height="168" xlink:href="./img/3_merlion.png" id="loc-3" class="is-hidden"/>
+
+			<image x="700" y="480" width="369" height="159" xlink:href="./img/4_garden.png" id="loc-4" class="is-hidden"/>
+
+			<image x="408" y="653" width="378" height="165" xlink:href="./img/5_flyer.png" id="loc-5" class="is-hidden"/>
+
+		</svg>
+	</div>
+	<footer id="footer">
+		<a href="#" target="_blank" class="tnc">Terms of usage</a> Kaja Copyright 2016
+	</footer>
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/jquery-ui.min.js"></script>
+
+	<script type="text/javascript" src="js/app.js"></script>
+</body>
+</html>
