@@ -99,7 +99,7 @@ $(document).ready(function(){
 
 	var endpage = false;
 
-	$('body').on('mousewheel', function(e){
+	$('body').on('DOMMouseScroll mousewheel', function(e){
 		if(firstscroll){
 			if(e.originalEvent.wheelDelta > 0) {
 	            // console.log('up 3');
