@@ -99,35 +99,6 @@ $(document).ready(function(){
 
 	var endpage = false;
 
-	$('body').on('DOMMouseScroll mousewheel', function(e){
-		if(firstscroll){
-			if(e.originalEvent.wheelDelta > 0) {
-	            // console.log('up 3');
-	        }
-	        else {
-
-	        	$('#scrolldown').animate({ "y": "-=773px" }, "slow" );
-
-	        	
-
-	        	$('#logo').css({'width': '133px','height': '113px', 'y' : '138px', 'x' : '573.5px' });
-	        	$("#logo-container").fadeIn(fading_speed);
-
-	        	$("#tripclick").fadeIn(fading_speed*3);
-	        	$("#tripbutton").fadeIn(fading_speed*3);
-
-	        	$('#hand').css({'y' : '700px'});
-
-	        	firstscroll = false;
-
-	        	setTimeout(function() {
-					$('#scrolldown').remove();
-				}, 1000);
-	        }
-	    }
-
-	});
-
 	$('#scrolldown').on('click', function(e){
 		if(firstscroll){
 			$('#scrolldown').attr({ "y": "-773" } );
@@ -202,7 +173,26 @@ $(document).ready(function(){
 
 	// When the page scrolls...
 	window.addEventListener("scroll", function(e) {
-		
+		if(firstscroll){
+			$('#scrolldown').animate({ "y": "-=773px" }, "slow" );
+
+			
+
+			$('#logo').css({'width': '133px','height': '113px', 'y' : '138px', 'x' : '573.5px' });
+			$("#logo-container").fadeIn(fading_speed);
+
+			$("#tripclick").fadeIn(fading_speed*3);
+			$("#tripbutton").fadeIn(fading_speed*3);
+
+			$('#hand').css({'y' : '700px'});
+
+			firstscroll = false;
+
+			setTimeout(function() {
+				$('#scrolldown').remove();
+			}, 1000);
+	    }
+
 		if(mappage){
 		  	var scrollPercentage = (document.documentElement.scrollTop + document.body.scrollTop) / (document.documentElement.scrollHeight - document.documentElement.clientHeight);
 

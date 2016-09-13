@@ -5,6 +5,9 @@ body {
 
 	overflow-y: scroll;
 }
+body > div {
+	min-height: 110vh;
+}
 #map-svg {
 	position: fixed;
 	top: 50%;
