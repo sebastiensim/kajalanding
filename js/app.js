@@ -176,9 +176,12 @@ $(document).ready(function(){
 		if(firstscroll){
 			$('#scrolldown').animate({ "y": "-=773px" }, "slow" );
 
-			
+			var logo = $('#logo');
+			logo.attr('width', 134);
+			logo.attr('height', 114);
+			logo.attr('x', 574);
+			logo.attr('y', 114);
 
-			$('#logo').css({'width': '133px','height': '113px', 'y' : '138px', 'x' : '573.5px' });
 			$("#logo-container").fadeIn(fading_speed);
 
 			$("#tripclick").fadeIn(fading_speed*3);
